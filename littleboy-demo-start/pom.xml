@@ -10,6 +10,94 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>littleboy-demo-start</artifactId>
+  <groupId>com.little.cloud</groupId>
+  <version>1.0-SNAPSHOT</version>
 
 
+  <dependencies>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-tomcat</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+    <dependency>
+      <groupId>org.activiti</groupId>
+      <artifactId>activiti-engine</artifactId>
+      <version>${activiti.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.activiti</groupId>
+      <artifactId>activiti-spring-boot-starter</artifactId>
+      <version>${activiti.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.activiti</groupId>
+      <artifactId>activiti-bpmn-model</artifactId>
+      <version>${activiti.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.activiti</groupId>
+      <artifactId>activiti-bpmn-converter</artifactId>
+      <version>${activiti.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.activiti</groupId>
+      <artifactId>activiti-bpmn-layout</artifactId>
+      <version>${activiti.version}</version>
+    </dependency>
+
+    <!--    <dependency>-->
+    <!--      <groupId>org.activiti</groupId>-->
+    <!--      <artifactId>activiti-cloud-services-api</artifactId>-->
+    <!--      <version>${activiti.version}</version>-->
+    <!--    </dependency>-->
+
+    <dependency>
+      <groupId>org.activiti</groupId>
+      <artifactId>activiti-json-converter</artifactId>
+      <version>${activiti.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.activiti.dependencies</groupId>
+      <artifactId>activiti-dependencies</artifactId>
+      <version>${activiti.version}</version>
+      <type>pom</type>
+    </dependency>
+
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+    </dependency>
+
+    <!-- 链接池 -->
+    <dependency>
+      <groupId>commons-dbcp</groupId>
+      <artifactId>commons-dbcp</artifactId>
+      <version>1.4</version>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+    </dependency>
+
+  </dependencies>
 </project>
